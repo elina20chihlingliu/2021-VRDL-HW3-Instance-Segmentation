@@ -49,26 +49,25 @@ cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5
 cfg.DATASETS.TEST = ("my_dataset")
 predictor = DefaultPredictor(cfg)
 
-'''
-# Visualization
-
-# In[7]:
 
 # select image for visualizer to check our dataset weather correct
-im = cv2.imread("/content/detectron2/test/TCGA-G9-6348-01Z-00-DX1.png")
-outputs = predictor(im)
+ls1 = ['TCGA-50-5931-01Z-00-DX1.png', 'TCGA-A7-A13E-01Z-00-DX1.png', 'TCGA-AY-A8YK-01A-01-TS1.png', 'TCGA-G2-A2EK-01A-02-TSB.png', 'TCGA-G9-6336-01Z-00-DX1.png', 'TCGA-G9-6348-01Z-00-DX1.png']
+for name in ls1:
+  im = cv2.imread("/content/detectron2/test/"+name)
+  outputs = predictor(im)
 
-v = Visualizer(im[:, :, ::-1],
-               metadata=metadata,
-               scale=1,
-               # remove the colors of unsegmented pixels
-               instance_mode=ColorMode.IMAGE_BW
-               )
-v = v.draw_instance_predictions(outputs["instances"].to("cpu"))
-plt.imshow(v.get_image())
-print('ok')
-cv2.imwrite('demo_TCGA-G9-6348-01Z-00-DX1.png', v.get_image())
-'''
+  v = Visualizer(im[:, :, ::-1],
+                metadata=metadata,
+                scale=1,
+                # remove the colors of unsegmented pixels
+                instance_mode=ColorMode.IMAGE_BW
+                )
+  v = v.draw_instance_predictions(outputs["instances"].to("cpu"))
+  plt.imshow(v.get_image())
+  print('ok')
+  out = 'demo_'+name
+  cv2.imwrite(out, v.get_image())
+
 
 # Submission
 
