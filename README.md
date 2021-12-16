@@ -52,7 +52,7 @@ Note: you often need to rebuild detectron2 after reinstalling PyTorch.
 
 
 ### Dataset Preparation
-Download the given dataset from my Google Drive: [train](https://drive.google.com/file/d/1FMZBGIGchY4YaUthdFeQuLNb70dI6WR5/view?usp=sharing), [test](https://drive.google.com/file/d/1KP1mguSRKBPwfSBYzKtEJBRhyT4pYbEZ/view?usp=sharing)
+Download the given dataset from my Google Drive: [train](https://drive.google.com/file/d/1FMZBGIGchY4YaUthdFeQuLNb70dI6WR5/view?usp=sharing)   [test](https://drive.google.com/file/d/1KP1mguSRKBPwfSBYzKtEJBRhyT4pYbEZ/view?usp=sharing)
 
 The files in the data folder is reorganized as below:
 ```
