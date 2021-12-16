@@ -13,7 +13,7 @@ This project uses the detectron2 pre-trained model to fix this challenge.
 
 ### Environment
 - Colab
-- Python 3.7
+- Python Python 3.7.12
 - Pytorch 1.10.0
 - CUDA 10.2
 
@@ -28,11 +28,10 @@ To reproduct my submission without retrainig, run inference.ipynb on my Google D
 ## All steps including data preparation, train phase and detect phase
 1. [Installation](#build-and-install-detectron2)
 2. [Data Preparation](#dataset-preparation)
-3. [Set Configuration](#set-configuration)
-4. [Download Pretrained Model](#download-pretrained-model)
-5. [Training](#training)
-6. [Testing](#testing)
-7. [Reference](#reference)
+3. [Download Pretrained Model](#download-pretrained-model)
+4. [Training](#training)
+5. [Testing](#testing)
+6. [Reference](#reference)
 
 
 ### Build and Install Detectron2
@@ -106,6 +105,7 @@ After training, it may generate a folder named "output", with weight file named 
 ```
 python submission_and_visualize.py
 ```
+- or download the pretrained model from Google Drive: [output](https://drive.google.com/file/d/1lmsq-2JC5aRf7a_kWp8T1b8VGfo_F1Tx/view?usp=sharing) and put 'output' in detectron2 dir
 
 - coco dataset format
 
