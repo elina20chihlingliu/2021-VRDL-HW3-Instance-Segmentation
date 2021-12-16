@@ -52,7 +52,7 @@ Note: you often need to rebuild detectron2 after reinstalling PyTorch.
 
 
 ### Dataset Preparation
-Download the given dataset from Google Drive: [train](https://drive.google.com/file/d/1FMZBGIGchY4YaUthdFeQuLNb70dI6WR5/view?usp=sharing), [test](https://drive.google.com/file/d/1KP1mguSRKBPwfSBYzKtEJBRhyT4pYbEZ/view?usp=sharing)
+Download the given dataset from my Google Drive: [train](https://drive.google.com/file/d/1FMZBGIGchY4YaUthdFeQuLNb70dI6WR5/view?usp=sharing), [test](https://drive.google.com/file/d/1KP1mguSRKBPwfSBYzKtEJBRhyT4pYbEZ/view?usp=sharing)
 
 The files in the data folder is reorganized as below:
 ```
@@ -85,7 +85,7 @@ After training, it may generate a folder named "output", with weight file named 
 ```
 python submission_and_visualize.py
 ```
-- download the pretrained model from Google Drive: [output](https://drive.google.com/file/d/1lmsq-2JC5aRf7a_kWp8T1b8VGfo_F1Tx/view?usp=sharing) and put 'output' in detectron2 dir
+- download the pretrained model from my Google Drive: [output](https://drive.google.com/file/d/1lmsq-2JC5aRf7a_kWp8T1b8VGfo_F1Tx/view?usp=sharing) and put 'output' in detectron2 dir
 ```
 python submission_and_visualize.py
 ```
