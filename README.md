@@ -69,7 +69,7 @@ The files in the data folder is reorganized as below:
 ```
 
 ### Dataset Preprocessing
-And run command `To_Cocoformat_and_moveImg.py` to create train folder following coco fomart 
+And run command `To_Cocoformat_and_moveImg.py` to create train folder following coco dataset fomart 
 ### Folder after Processing
 ![image](https://github.com/vbnmzxc9513/Nuclei-detection/blob/master/demo/trainfolder_after.png)
 
@@ -78,7 +78,7 @@ And run command `To_Cocoformat_and_moveImg.py` to create train folder following 
 ```
 python train_Cascade.py
 ```
-After training, it may generate a folder named "output", with weight file named (iteration_count).pth
+After training, it may generate a folder named "output", with weight file named model_final.pth
 
 ### Testing
 - segment test data and creat answer.json following coco dataset format
