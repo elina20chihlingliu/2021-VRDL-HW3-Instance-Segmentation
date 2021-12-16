@@ -5,7 +5,7 @@ The proposed challenge is a nuclei segmentation, which contains two parts:
 1. Transform the original train data format to coco format for detectron2 training phase
 2. Segment the nuclei of bounding boxes
 
-Nuclear segmentation dataset contains 24 training images with 14,598 nuclear and 6 test images with 2,360 nuclear 
+Nuclear segmentation dataset contains 24 training images with 14,598 nuclear and 6 test images with 2,360 nuclear\n 
 Train an instance segmentation model to detect and segment all the nuclei in the image 
 
 This project uses the detectron2 pre-trained model to fix this challenge.
