@@ -69,12 +69,9 @@ The files in the data folder is reorganized as below:
 ```
 
 ### Dataset Preprocessing
-And run command `To_Cocoformat_and_moveImg.py` to create train folder following coco fomart for training
-## Folder after Processing
+And run command `To_Cocoformat_and_moveImg.py` to create train folder following coco fomart 
+### Folder after Processing
 ![image](https://github.com/vbnmzxc9513/Nuclei-detection/blob/master/demo/trainfolder_after.png)
-
-### Download Pretrained Model
-- yolov5m.pt： https://github.com/ultralytics/yolov5/releases
 
 ### Training
 - to train models, run following commands.
