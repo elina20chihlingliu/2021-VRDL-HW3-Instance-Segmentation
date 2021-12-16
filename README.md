@@ -2,7 +2,7 @@
 HW3 Introduction: Nuclei segmentation
 
 The proposed challenge is a nuclei segmentation, which contains two parts:
-1. Transform the original train data format to coco format for detectron2 training phase
+1. Transform the original train data format to coco format for detectron2 training 
 2. Segment the nuclei of bounding boxes
 
 Nuclear segmentation dataset contains 24 training images with 14,598 nuclear and 6 test images with 2,360 nuclear
@@ -28,10 +28,9 @@ To reproduct my submission without retrainig, run inference.ipynb on my Google D
 ## All steps including data preparation, train phase and detect phase
 1. [Installation](#build-and-install-detectron2)
 2. [Data Preparation](#dataset-preparation)
-3. [Download Pretrained Model](#download-pretrained-model)
-4. [Training](#training)
-5. [Testing](#testing)
-6. [Reference](#reference)
+3. [Training](#training)
+4. [Testing](#testing)
+5. [Reference](#reference)
 
 
 ### Build and Install Detectron2
@@ -70,25 +69,9 @@ The files in the data folder is reorganized as below:
 ```
 
 ### Dataset Preprocessing
-And run command `To_Cocoformat_and_moveImg.py` to create train.txt, val.txt, test.txt for training and reorganize the  data structure as below:
-```
-./data
- ├── train
- │     ├──  xxx.png
- │     └──  digitStruct.mat
- ├── test
- │     └──  yyy.png
- ├── dataset
- │     ├──  train.txt
- │     ├──  test.txt
- │     └──  val.txt
- ├── train.txt
- ├── test.txt
- ├── val.txt
- ├── mat_to_yolo.py
- ├── train_val_test.py
- └── shvn.yaml
-```
+And run command `To_Cocoformat_and_moveImg.py` to create train folder following coco fomart for training
+## Folder after Processing
+![image](https://github.com/vbnmzxc9513/Nuclei-detection/blob/master/demo/trainfolder_after.png)
 
 ### Download Pretrained Model
 - yolov5m.pt： https://github.com/ultralytics/yolov5/releases
@@ -105,7 +88,10 @@ After training, it may generate a folder named "output", with weight file named 
 ```
 python submission_and_visualize.py
 ```
-- or download the pretrained model from Google Drive: [output](https://drive.google.com/file/d/1lmsq-2JC5aRf7a_kWp8T1b8VGfo_F1Tx/view?usp=sharing) and put 'output' in detectron2 dir
+- download the pretrained model from Google Drive: [output](https://drive.google.com/file/d/1lmsq-2JC5aRf7a_kWp8T1b8VGfo_F1Tx/view?usp=sharing) and put 'output' in detectron2 dir
+```
+python submission_and_visualize.py
+```
 
 - coco dataset format
 
