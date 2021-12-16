@@ -2,7 +2,7 @@
 HW3 Introduction: Nuclei segmentation
 
 The proposed challenge is a nuclei segmentation, which contains two parts:
-1. Transform the original train data format to coco format for detectron2 training 
+1. Transform the original train data format to coco dataset format for detectron2 training 
 2. Segment the nuclei of bounding boxes
 
 Nuclear segmentation dataset contains 24 training images with 14,598 nuclear and 6 test images with 2,360 nuclear
@@ -81,7 +81,7 @@ python train_Cascade.py
 After training, it may generate a folder named "output", with weight file named model_final.pth
 
 ### Testing
-- segment test data and creat answer.json following coco dataset format
+- segment test data and create answer.json following coco dataset format
 ```
 python submission_and_visualize.py
 ```
