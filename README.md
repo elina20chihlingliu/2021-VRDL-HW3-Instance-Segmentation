@@ -13,7 +13,7 @@ This project uses the detectron2 pre-trained model to fix this challenge.
 
 ### Environment
 - Colab
-- Python Python 3.7.12
+- Python 3.7.12
 - Pytorch 1.10.0
 - CUDA 10.2
 
@@ -27,7 +27,7 @@ To reproduct my submission without retrainig, run inference.ipynb on my Google D
 
 ## All steps including data preparation, train phase and detect phase
 1. [Installation](#build-and-install-detectron2)
-2. [Data Preparation](#dataset-preparation)
+2. [Dataset Preparation](#dataset-preparation)
 3. [Training](#training)
 4. [Testing](#testing)
 5. [Reference](#reference)
